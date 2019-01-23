@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ut-8">
+    <title>CEIR</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script> 
+        $(document).ready(function(){
+        $(".info").click(function(){
+            $("#panel").slideDown("slow");
+        });
+        });
+        </script>
+
+</head>
+
+<style>
+
+
+    #info{
+        margin-top: 1em;
+    }
+
+.jumbotron{
+
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+        .imagen_logo{
+
+    width: 15em;
+    height: 15em;
+    }
+
+    .Inicio{
+        width: 100%;
+    height: 100%;
+
+    }
+
+    .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+      }
+      
+      /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+      .row.content {height: 450px}
+      
+      /* Set gray background color and 100% height */
+      .sidenav {
+        padding-top: 20px;
+        background-color: #f1f1f1;
+        height: auto;
+      }
+      
+      
+      /* On small screens, set height to 'auto' for sidenav and grid */
+      @media screen and (max-width: 767px) {
+        .sidenav {
+          height: auto;
+          padding: 15px;
+          width: auto;
+        }
+        .row.content {height:auto;} 
+      }
+  
+      .jumbotron{
+          margin: 0 auto; 
+          width: 700px;
+      }
+
+      .grow:hover
+        {
+
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+
+        }
+
+        .well{
+
+            background-color: white;
+        }
+
+        #imagenes{
+            border-radius: 5em;
+        }
+
+        #panel, #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+          }
+          
+          #panel {
+            padding: 50px;
+            display: none;
+          }
+
+</style>
+
+<nav class="container-fluid">
+        <div>
+            <div class="col-md-4">
+                <a href="index.html" title="CEIR">
+                        <img class="imagen_logo" src="imagenes/logo_ceir.png" alt="logo CEIR">
+                    </a>
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+                <nav style="margin-top:50px">
+                    <a href="login.html" title="La Agencia" class="col-md-4">Login</a>
+                    <a href="cesta.html" title="La Agencia" class="col-md-4">Cesta</a>
+                    <a href="contacto.html" title="Contacto" class="col-md-4">Contacto</a>
+                </nav>
+            </div>
+        </div>
+
+    </nav>
+
+<body>
+
+
+        <div class="container-fluid text-center">    
+                <div class="row content">
+                      <div class="col-sm-2 sidenav">
+                              <div class="well">
+                                      <p>REVISIONES</p>
+                                  <img id="imagenes" class="grow" height= "100%" width= "100%" src="imagenes/revision.jpg">        
+                                  <a href="revisiones.html">
+                                        <button id="info" class="btn btn-primary">+Info</button>
+                                    </a>
+                                    <div id="panel">Hello world!</div>
+
+                                </div>
+                              <div class="well">
+
+                                <p>NOVEDADES</p>
+                                <img id="imagenes" class="grow" height= "100%" width= "100%" src="imagenes/novedades.jpg">        
+                                <a href="novedades.html">
+                                        <button id="info" class="btn btn-primary">+Info</button>
+                                    </a>                              </div>
+                            </div>
+                  <div class="col-sm-8 text-left"> 
+                    <h1>Bienvenidos a CEIR</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <hr>
+                    <div class="jumbotron">
+              
+                          <iframe class="grow" width="560" height="315" src="https://www.youtube.com/embed/IaW9Sg5NPyE?start=424" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+                    </div>
+                  </div>
+                  <div class="col-sm-2 sidenav">
+                    <div class="well">
+
+                      <p>MARCAS</p>
+                      <img id="imagenes" class="grow" height= "100%" width= "100%" src="imagenes/marcas.jpg">        
+                      <a href="marcas.html">
+                            <button id="info" class="btn btn-primary">+Info</button>
+                        </a>                   
+                     </div>
+
+                    <div class="well">
+                      <p>ACCESORIOS</p>
+                      <img id="imagenes" class="grow" height= "100%" width= "100%" src="imagenes/accesorios.jpg">        
+                      <a href="accesorios.html">
+                            <button id="info" class="btn btn-primary">+Info</button>
+                        </a>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+</body>
+
+<footer class="container-fluid">
+        <div class="row well">
+            <div class="col-md-3 col-sm-6">
+                <adress>
+                    <h3>CEIR</h3>
+                    Calle Colon 31<br>Valencia, España 46004
+                </adress>
+                <a target="_blank" href="https://goo.gl/maps/XeSuK1cPa572">
+                    <button type="button" class="btn btn-info">Ver en Google Maps</button>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <h3>Contacto</h3>
+                Tel: (+34) 681355373<br>
+                <a href="maito:hola@ceir.com" title="hola@ceir.com">hola@ceir.com</a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <h3>Redes sociales</h3>
+                Twitter<br>
+                Facebook<br>
+                Intagram<br>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <h3>Sobre nosotros</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et
+                    dolore magna aliqua.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                &copy; Ceir, 2018
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="js/bootstrap.js"></script>
+
+
+
+</html>

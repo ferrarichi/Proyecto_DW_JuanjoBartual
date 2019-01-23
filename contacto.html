@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ut-8">
+    <title>CEIR</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+
+
+</head>
+
+<style>
+
+
+    .jumbotron{
+
+    width: 100%;
+    background-color: black;
+    align-content: center;
+
+}
+        .imagen_logo{
+
+    width: 15em;
+    height: 15em;
+    }
+
+    .Inicio{
+        width: 100%;
+    height: 100%;
+
+    }
+
+    #contacto{
+        background-color: #70c3be;
+        letter-spacing: 2px;
+        }
+      #contacto a{
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      
+      @media (max-width: 575.98px) {
+      
+        #contacto .maps iframe{
+          width: 100%;
+          height: 450px;
+        }
+       }
+      
+      
+      @media (min-width: 576px) {
+      
+      
+         #contacto .maps iframe{
+           width: 100%;
+           height: 450px;
+         }
+       }
+      
+      @media (min-width: 768px) {
+      
+      
+        #contacto .maps iframe{
+          width: 100%;
+          height: 850px;
+        }
+      }
+      
+      @media (min-width: 992px) {
+      
+         #contacto .maps iframe{
+           width: 100%;
+           height: 700px;
+         }
+      }
+      
+      
+      #author a{
+        color: #fff;
+        text-decoration: none;
+          
+      }
+    
+</style>
+<header class="container-fluid">
+    <div>
+        <div class="col-md-4">
+            <a href="index.html" title="CEIR">
+                    <img class="imagen_logo" src="imagenes/logo_ceir.png" alt="logo CEIR">
+            </a>
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+            <nav style="margin-top:50px">
+                <a href="login.html" title="La Agencia" class="col-md-4">Login</a>
+                <a href="cesta.html" title="La Agencia" class="col-md-4">Cesta</a>
+                <a href="contacto.html" title="Contacto" class="col-md-4">Contacto</a>
+            </nav>
+        </div>
+    </div>
+
+</header>
+
+<body>
+
+
+
+    <div class="row" id="contacto">
+        <div class="container mt-5">
+
+            <div class="row" style="height:550px;">
+                <div class="col-md-6 maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.996770023029!2d-0.37373608463267055!3d39.469401679486545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6048b46c1a2fe7%3A0xa3d7549ccb546438!2sCalle+Col%C3%B3n%2C+31-27%2C+46004+Valencia!5e0!3m2!1ses!2ses!4v1548156233071"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> </div>
+                <div class="col-md-6">
+                    <h2 class="text-uppercase mt-3 font-weight-bold text-white">CONTACTO</h2>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control mt-2" placeholder="Nombre" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control mt-2" placeholder="Apellidos" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control mt-2" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="number" class="form-control mt-2" placeholder="Teléfono" required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Introduce el texto"
+                                        rows="3" required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-light" type="submit">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="text-white">
+                        <h2 class="text-uppercase mt-4 font-weight-bold">Donde estamos</h2>
+
+                        <i class="fas fa-phone mt-3"></i> <a href="tel:+">(+34) 681355373</a><br>
+                        <i class="fa fa-envelope mt-3"></i> <a href="">hola@ceir.com</a><br>
+                        <i class="fas fa-globe mt-3"></i> Calle Colon 31, Valencia, España 46004<br>
+                        <div class="my-4">
+                            <a href=""><i class="fab fa-facebook fa-3x pr-4"></i></a>
+                            <a href=""><i class="fab fa-linkedin fa-3x"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+<footer class="container-fluid">
+    <div class="row well">
+        <div class="col-md-3 col-sm-6">
+            <adress>
+                <h3>CEIR</h3>
+                Calle Colon 31<br>Valencia, España 46004
+            </adress>
+            <a target="_blank" href="https://goo.gl/maps/XeSuK1cPa572">
+                <button type="button" class="btn btn-info">Ver en Google Maps</button>
+            </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <h3>Contacto</h3>
+            Tel: (+34) 681355373<br>
+            <a href="maito:hola@ceir.com" title="hola@ceir.com">hola@ceir.com</a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <h3>Redes sociales</h3>
+            Twitter<br>
+            Facebook<br>
+            Intagram<br>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <h3>Sobre nosotros</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et
+                dolore magna aliqua.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            &copy; Ceir, 2018
+        </div>
+
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="js/bootstrap.js"></script>
+
+
+</html>
