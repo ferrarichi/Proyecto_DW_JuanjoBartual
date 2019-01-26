@@ -9,11 +9,11 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/estilos.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
 
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
 
 
@@ -22,7 +22,7 @@
 <style>
 
 
-.jumbotron{
+    .jumbotron{
 
     width: 100%;
     background-color: black;
@@ -43,113 +43,135 @@
     
 </style>
 <header class="container-fluid">
-        <div>
-            <div class="col-md-4">
-                <a href="index.html" title="CEIR">
-                        <img class="imagen_logo" src="imagenes/logo_ceir.png" alt="logo CEIR">
-                    </a>
-            </div>
-            <div class="col-md-4 col-md-offset-4">
-                <nav style="margin-top:50px">
-                    <a href="login.html" title="La Agencia" class="col-md-4">Login</a>
-                    <a href="cesta.html" title="La Agencia" class="col-md-4">Cesta</a>
-                    <a href="contacto.html" title="Contacto" class="col-md-4">Contacto</a>
-                </nav>
-            </div>
+    <div>
+        <div class="col-md-4">
+            <a href="index.html" title="CEIR">
+                <img class="imagen_logo" src="imagenes/logo_ceir.png" alt="logo CEIR">
+            </a>
         </div>
+        <div class="col-md-4 col-md-offset-4">
+            <nav style="margin-top:50px">
+                <a href="login.html" title="La Agencia" class="col-md-4">Login</a>
+                <a href="cesta.html" title="La Agencia" class="col-md-4">Cesta</a>
+                <a href="contacto.html" title="Contacto" class="col-md-4">Contacto</a>
+            </nav>
+        </div>
+    </div>
 
-    </header>
+</header>
+
 <body>
- 
-            <div class="container">
-                    <table id="cart" class="table table-hover table-condensed">
-                                    <thead>
-                                        <tr>
-                                            <th style="width:50%">Producto</th>
-                                            <th style="width:10%">Precio</th>
-                                            <th style="width:8%">Cantidad</th>
-                                            <th style="width:22%" class="text-center">Subtotal</th>
-                                            <th style="width:10%"></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td data-th="Product">
-                                                <div class="row">
-                                                    <div class="col-sm-2 hidden-xs"><img src="imagenes/Llavero_bujia.jpg" alt="..." class="img-responsive"/></div>
-                                                    <div class="col-sm-10">
-                                                        <h4 class="nomargin">Llavero Bujia</h4>
-                                                        <p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet.</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td data-th="Price">4.99€</td>
-                                            <td data-th="Quantity">
-                                                <input type="number" class="form-control text-center" value="1">
-                                            </td>
-                                            <td data-th="Subtotal" class="text-center">4.99€</td>
-                                            <td class="actions" data-th="">
-                                                <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
-                                                <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr class="visible-xs">
-                                            <td class="text-center"><strong>Total 4.99</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Comprando</a></td>
-                                            <td colspan="2" class="hidden-xs"></td>
-                                            <td class="hidden-xs text-center"><strong>Total 4.99€</strong></td>
-                                            <td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                </div>
+
+    <div class="container">
+        <table id="cart" class="table table-hover table-condensed">
+            <thead>
+                <tr>
+                    <th style="width:50%">Producto</th>
+                    <th style="width:10%">Precio</th>
+                    <th style="width:8%">Cantidad</th>
+                    <th style="width:22%" class="text-center">Subtotal</th>
+                    <th style="width:10%"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-th="Product">
+                        <div class="row">
+                            <div class="col-sm-2 hidden-xs"><img src="imagenes/Llavero_bujia.jpg" alt="..." class="img-responsive" /></div>
+                            <div class="col-sm-10">
+                                <h4 class="nomargin">Llavero Bujia</h4>
+                                <p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td data-th="Price">7€</td>
+                    <td data-th="Quantity">
+                        <input type="number" class="form-control text-center" value="2">
+                    </td>
+                    <td data-th="Subtotal" class="text-center">14</td>
+                    <td class="actions" data-th="">
+                        <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td data-th="Product">
+                        <div class="row">
+                            <div class="col-sm-2 hidden-xs"><img src="imagenes/original-race-fuel-candle-1_x700.jpg" alt="..." class="img-responsive" /></div>
+                            <div class="col-sm-10">
+                                <h4 class="nomargin">Vela Olor Carreras</h4>
+                                <p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td data-th="Price">7.60€</td>
+                    <td data-th="Quantity">
+                        <input type="number" class="form-control text-center" value="1">
+                    </td>
+                    <td data-th="Subtotal" class="text-center">7.60€</td>
+                    <td class="actions" data-th="">
+                        <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+
+                <tr>
+                    <td><a href="accesorios.html" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continuar Comprando</a></td>
+                    <td colspan="2" class="hidden-xs"></td>
+                    <td class="hidden-xs text-center"><strong>Total 21.60€</strong></td>
+                    <td><a href="login.html" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 
 
 
 </body>
 
 <footer class="container-fluid">
-        <div class="row well">
-            <div class="col-md-3 col-sm-6">
-                <adress>
-                    <h3>CEIR</h3>
-                    Calle Colon 31<br>Valencia, España 46004
-                </adress>
-                <a target="_blank" href="https://goo.gl/maps/XeSuK1cPa572">
-                    <button type="button" class="btn btn-info">Ver en Google Maps</button>
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <h3>Contacto</h3>
-                Tel: (+34) 681355373<br>
-                <a href="maito:hola@ceir.com" title="hola@ceir.com">hola@ceir.com</a>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <h3>Redes sociales</h3>
-                Twitter<br>
-                Facebook<br>
-                Intagram<br>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <h3>Sobre nosotros</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et
-                    dolore magna aliqua.</p>
-            </div>
+    <div class="row well">
+        <div class="col-md-3 col-sm-6">
+            <adress>
+                <h3>CEIR</h3>
+                Calle Colon 31<br>Valencia, España 46004
+            </adress>
+            <a target="_blank" href="https://goo.gl/maps/XeSuK1cPa572">
+                <button type="button" class="btn btn-info">Ver en Google Maps</button>
+            </a>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                &copy; Ceir, 2018
-            </div>
-
+        <div class="col-md-3 col-sm-6">
+            <h3>Contacto</h3>
+            Tel: (+34) 681355373<br>
+            <a href="maito:hola@ceir.com" title="hola@ceir.com">hola@ceir.com</a>
         </div>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <div class="col-md-3 col-sm-6">
+            <h3>Redes sociales</h3>
+            Twitter<br>
+            Facebook<br>
+            Intagram<br>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <h3>Sobre nosotros</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et
+                dolore magna aliqua.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            &copy; Ceir, 2018
+        </div>
 
-    <script src="js/bootstrap.js"></script>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="js/bootstrap.js"></script>
 
 
 

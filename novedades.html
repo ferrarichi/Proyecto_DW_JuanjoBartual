@@ -10,14 +10,14 @@
     <link href="css/estilos.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
-    <script> 
-        $(document).ready(function(){
-        $(".info").click(function(){
-            $("#panel").slideDown("slow");
+
+    <script>
+        $(document).ready(function () {
+            $(".info").click(function () {
+                $("#panel").slideDown("slow");
+            });
         });
-        });
-        </script>
+    </script>
 
 </head>
 
@@ -108,122 +108,147 @@
             display: none;
           }
 
+          .accesorios{
+
+            height: 10em;
+            width: 10em;
+          }
+
 </style>
 
 <nav class="container-fluid">
-        <div>
-            <div class="col-md-4">
-                <a href="index.html" title="CEIR">
-                        <img class="imagen_logo" src="imagenes/logo_ceir.png" alt="logo CEIR">
-                    </a>
-            </div>
-            <div class="col-md-4 col-md-offset-4">
-                <nav style="margin-top:50px">
-                    <a href="login.html" title="La Agencia" class="col-md-4">Login</a>
-                    <a href="cesta.html" title="La Agencia" class="col-md-4">Cesta</a>
-                    <a href="contacto.html" title="Contacto" class="col-md-4">Contacto</a>
-                </nav>
-            </div>
+    <div>
+        <div class="col-md-4">
+            <a href="index.html" title="CEIR">
+                <img class="imagen_logo" src="imagenes/logo_ceir.png" alt="logo CEIR">
+            </a>
         </div>
+        <div class="col-md-4 col-md-offset-4">
+            <nav style="margin-top:50px">
+                <a href="login.html" title="La Agencia" class="col-md-4">Login</a>
+                <a href="cesta.html" title="La Agencia" class="col-md-4">Cesta</a>
+                <a href="contacto.html" title="Contacto" class="col-md-4">Contacto</a>
+            </nav>
+        </div>
+    </div>
 
-    </nav>
+</nav>
 
 <body>
 
 
-        <div class="container-fluid text-center">    
-                <div class="row content">
-                      <div class="col-sm-2 sidenav">
-                              <div class="well">
-                                      <p>REVISIONES</p>
-                                  <img id="imagenes" class="grow" height= "100%" width= "100%" src="imagenes/revision.jpg">        
-                                  <a href="revisiones.html">
-                                        <button id="info" class="btn btn-primary">+Info</button>
-                                    </a>
-                                    <div id="panel">Hello world!</div>
+    <div class="contenedor">
 
-                                </div>
-                              <div class="well">
+        <div>
+            <button type="button" class="btn btn-info"> LLavero Bujia</button>
+            <img class="accesorios" src="imagenes/Llavero_bujia.jpg">
+            <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mi ex, quis pretium orci
+                efficitur eleifend. Donec congue quis risus vel feugiat. </span>
+            <br> <strong> 7€ </strong>
+        </div>
 
-                                <p>NOVEDADES</p>
-                                <img id="imagenes" class="grow" height= "100%" width= "100%" src="imagenes/novedades.jpg">        
-                                <a href="novedades.html">
-                                        <button id="info" class="btn btn-primary">+Info</button>
-                                    </a>                              </div>
-                            </div>
-                  <div class="col-sm-8 text-left"> 
-                    <h1>Bienvenidos a CEIR</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <hr>
-                    <div class="jumbotron">
-              
-                          <iframe class="grow" width="560" height="315" src="https://www.youtube.com/embed/IaW9Sg5NPyE?start=424" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-                    </div>
-                  </div>
-                  <div class="col-sm-2 sidenav">
-                    <div class="well">
+        <div>
+                <button type="button" class="btn btn-info"> LLavero Cambio de marchas</button>
+                <img class="accesorios" src="imagenes/llavero_cambiomarchas.jpeg">
+                <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mi ex, quis pretium orci
+                efficitur eleifend. Donec congue quis risus vel feugiat. </span>
+                <br> <strong> 4,60€ </strong>
+            </div>
+        <div>
+                <button type="button" class="btn btn-info"> LLavero Mazda</button>
+                <img class="accesorios" src="imagenes/Llavero_mazda.jpg">
+            <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mi ex, quis pretium orci
+                efficitur eleifend. Donec congue quis risus vel feugiat. </span>
+                <br> <strong> 4,60€ </strong>
+        </div>
+        <div>
+                <button type="button" class="btn btn-info"> LLavero Turbo</button>
+                <img class="accesorios" src="imagenes/llavero_turbo.jpg">
+            <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mi ex, quis pretium orci
+                efficitur eleifend. Donec congue quis risus vel feugiat. </span>
+                <br> <strong> 4,60€ </strong>
+        </div>
 
-                      <p>MARCAS</p>
-                      <img id="imagenes" class="grow" height= "100%" width= "100%" src="imagenes/marcas.jpg">        
-                      <a href="marcas.html">
-                            <button id="info" class="btn btn-primary">+Info</button>
-                        </a>                   
-                     </div>
+        <div>
+                <button type="button" class="btn btn-info"> LLavero Suspension</button>
+                <img class="accesorios" src="imagenes/llavero_suspension.jpeg">
+            <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mi ex, quis pretium orci
+                efficitur eleifend. Donec congue quis risus vel feugiat. </span>
+                <br> <strong> 4,60€ </strong>
+        </div>
 
-                    <div class="well">
-                      <p>ACCESORIOS</p>
-                      <img id="imagenes" class="grow" height= "100%" width= "100%" src="imagenes/accesorios.jpg">        
-                      <a href="accesorios.html">
-                            <button id="info" class="btn btn-primary">+Info</button>
-                        </a>
-
-                    </div>
-                  </div>
+        <div>
+                <button type="button" class="btn btn-info"> Vela Olor Carreras</button>
+                <img class="accesorios" src="imagenes/original-race-fuel-candle-1_x700.jpg">
+            <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mi ex, quis pretium orci
+                efficitur eleifend. Donec congue quis risus vel feugiat. </span>
+                <br> <strong> 7,60€ </strong>
+        </div>
+        <div>
+                <button type="button" class="btn btn-info"> Pegatina Retrovisor</button>
+                <img class="accesorios" src="imagenes/pegatina_retrovisor.png">
+            <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mi ex, quis pretium orci
+                efficitur eleifend. Donec congue quis risus vel feugiat. </span>
+                <br> <strong> 3,60€ </strong>
+        </div>
+        <div>
+                <button type="button" class="btn btn-info"> Sujeta Moviles</button>
+                <img class="accesorios" src="imagenes/sujeta_movil.jpg">
+                <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mi ex, quis pretium orci
+                    efficitur eleifend. Donec congue quis risus vel feugiat. </span>
+                    <br> <strong> 6,60€ </strong>
                 </div>
-              </div>
+            <div>
+                    <button type="button" class="btn btn-info"> Visor Velocidad</button>
+                    <img class="accesorios" src="imagenes/visor_velocidad.jpg">
+                    <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mi ex, quis pretium orci
+                        efficitur eleifend. Donec congue quis risus vel feugiat. </span>
+                        <br> <strong> Proximamente </strong>
+                    </div>
+    </div>
 
 
 
 </body>
 
 <footer class="container-fluid">
-        <div class="row well">
-            <div class="col-md-3 col-sm-6">
-                <adress>
-                    <h3>CEIR</h3>
-                    Calle Colon 31<br>Valencia, España 46004
-                </adress>
-                <a target="_blank" href="https://goo.gl/maps/XeSuK1cPa572">
-                    <button type="button" class="btn btn-info">Ver en Google Maps</button>
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <h3>Contacto</h3>
-                Tel: (+34) 681355373<br>
-                <a href="maito:hola@ceir.com" title="hola@ceir.com">hola@ceir.com</a>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <h3>Redes sociales</h3>
-                Twitter<br>
-                Facebook<br>
-                Intagram<br>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <h3>Sobre nosotros</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et
-                    dolore magna aliqua.</p>
-            </div>
+    <div class="row well">
+        <div class="col-md-3 col-sm-6">
+            <adress>
+                <h3>CEIR</h3>
+                Calle Colon 31<br>Valencia, España 46004
+            </adress>
+            <a target="_blank" href="https://goo.gl/maps/XeSuK1cPa572">
+                <button type="button" class="btn btn-info">Ver en Google Maps</button>
+            </a>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                &copy; Ceir, 2018
-            </div>
-
+        <div class="col-md-3 col-sm-6">
+            <h3>Contacto</h3>
+            Tel: (+34) 681355373<br>
+            <a href="maito:hola@ceir.com" title="hola@ceir.com">hola@ceir.com</a>
         </div>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <div class="col-md-3 col-sm-6">
+            <h3>Redes sociales</h3>
+            Twitter<br>
+            Facebook<br>
+            Intagram<br>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <h3>Sobre nosotros</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et
+                dolore magna aliqua.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            &copy; Ceir, 2018
+        </div>
 
-    <script src="js/bootstrap.js"></script>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="js/bootstrap.js"></script>
 
 
 
