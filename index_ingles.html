@@ -1,6 +1,97 @@
 ﻿<!DOCTYPE html>
 <html>
 
+    <style>
+
+
+        #info{
+            margin-top: 1em;
+        }
+    
+    .jumbotron{
+    
+        width: 100%;
+        margin: 0 auto;
+    
+    }
+    
+            .imagen_logo{
+    
+        width: 15em;
+        height: 15em;
+        }
+    
+        .Inicio{
+            width: 100%;
+        height: 100%;
+    
+        }
+    
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+          }
+          
+          /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+          .row.content {height: 450px}
+          
+          /* Set gray background color and 100% height */
+          .sidenav {
+            padding-top: 20px;
+            background-color: #f1f1f1;
+            height: auto;
+          }
+          
+          
+          /* On small screens, set height to 'auto' for sidenav and grid */
+          @media screen and (max-width: 767px) {
+            .sidenav {
+              height: auto;
+              padding: 15px;
+              width: auto;
+            }
+            .row.content {height:auto;} 
+          }
+      
+          .jumbotron{
+              margin: 0 auto; 
+              width: 700px;
+          }
+    
+          .grow:hover
+            {
+    
+            -webkit-transform: scale(1.3);
+            -ms-transform: scale(1.3);
+            transform: scale(1.3);
+    
+            }
+    
+            .well{
+    
+                background-color: white;
+            }
+    
+            #imagenes{
+                border-radius: 5em;
+            }
+    
+            #panel, #flip {
+                padding: 5px;
+                text-align: center;
+                background-color: #e5eecc;
+                border: solid 1px #c3c3c3;
+              }
+              
+              #panel {
+                padding: 50px;
+                display: none;
+              }
+    
+    
+    </style>
+
+
 <head>
     <meta charset="ut-8">
     <title>CEIR</title>
@@ -21,101 +112,13 @@
 
 </head>
 
-<style>
 
-
-    #info{
-        margin-top: 1em;
-    }
-
-.jumbotron{
-
-    width: 100%;
-    margin: 0 auto;
-
-}
-
-        .imagen_logo{
-
-    width: 15em;
-    height: 15em;
-    }
-
-    .Inicio{
-        width: 100%;
-    height: 100%;
-
-    }
-
-    .navbar {
-        margin-bottom: 0;
-        border-radius: 0;
-      }
-      
-      /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-      .row.content {height: 450px}
-      
-      /* Set gray background color and 100% height */
-      .sidenav {
-        padding-top: 20px;
-        background-color: #f1f1f1;
-        height: auto;
-      }
-      
-      
-      /* On small screens, set height to 'auto' for sidenav and grid */
-      @media screen and (max-width: 767px) {
-        .sidenav {
-          height: auto;
-          padding: 15px;
-          width: auto;
-        }
-        .row.content {height:auto;} 
-      }
-  
-      .jumbotron{
-          margin: 0 auto; 
-          width: 700px;
-      }
-
-      .grow:hover
-        {
-
-        -webkit-transform: scale(1.3);
-        -ms-transform: scale(1.3);
-        transform: scale(1.3);
-
-        }
-
-        .well{
-
-            background-color: white;
-        }
-
-        #imagenes{
-            border-radius: 5em;
-        }
-
-        #panel, #flip {
-            padding: 5px;
-            text-align: center;
-            background-color: #e5eecc;
-            border: solid 1px #c3c3c3;
-          }
-          
-          #panel {
-            padding: 50px;
-            display: none;
-          }
-
-
-</style>
 
 <nav class="container-fluid">
     <div>
         <div class="col-md-4">
             <a href="index.html" title="CEIR">
-                <img class="imagen_logo" src="imagenes/logo_ceir.png" alt="logo CEIR">
+                <img alt="Logo image" class="imagen_logo" src="imagenes/logo_ceir.png" alt="logo CEIR">
             </a>
         </div>
         <div class="col-md-4 col-md-offset-4">
@@ -137,7 +140,7 @@
             <div class="col-sm-2 sidenav">
                 <div class="well">
                     <p>REVISIONS</p>
-                    <img id="imagenes" class="grow" height="100%" width="100%" src="imagenes/revision.jpg">
+                    <img alt="Revisions logo" id="imagenes" class="grow" height="100%" width="100%" src="imagenes/revision.jpg">
                     <a href="revisiones.html">
                         <button id="info" class="btn btn-primary">+Info</button>
                     </a>
@@ -146,7 +149,7 @@
                 <div class="well">
 
                     <p>NEWS</p>
-                    <img id="imagenes" class="grow" height="100%" width="100%" src="imagenes/novedades.jpg">
+                    <img alt="News logo" id="imagenes" class="grow" height="100%" width="100%" src="imagenes/novedades.jpg">
                     <a href="novedades.html">
                         <button id="info" class="btn btn-primary">+Info</button>
                     </a>
@@ -172,7 +175,7 @@
                 <div class="well">
 
                     <p>BRANDS</p>
-                    <img id="imagenes" class="grow" height="100%" width="100%" src="imagenes/marcas.jpg">
+                    <img alt="Brands logo" id="imagenes" class="grow" height="100%" width="100%" src="imagenes/marcas.jpg">
                     <a href="marcas.html">
                         <button id="info" class="btn btn-primary">+Info</button>
                     </a>
@@ -180,7 +183,7 @@
 
                 <div class="well">
                     <p>ACCESORIES</p>
-                    <img id="imagenes" class="grow" height="100%" width="100%" src="imagenes/accesorios.jpg">
+                    <img alt="Accesories logo" id="imagenes" class="grow" height="100%" width="100%" src="imagenes/accesorios.jpg">
                     <a href="accesorios.html">
                         <button id="info" class="btn btn-primary">+Info</button>
                     </a>
@@ -202,33 +205,31 @@
                 Calle Colon 31<br>Valencia, España 46004
             </adress>
             <a target="_blank" href="https://goo.gl/maps/XeSuK1cPa572">
-                <button type="button" class="btn btn-info">Wacht in Google Maps</button>
+                <button type="button" class="btn btn-info">Ver en Google Maps</button>
             </a>
         </div>
         <div class="col-md-3 col-sm-6">
-            <h3>Contact</h3>
+            <h3>Contacto</h3>
             Tel: (+34) 681355373<br>
-            <a href="maito:hola@ceir.com" title="hola@ceir.com">hello@ceir.com</a>
-            <table width="50px">
+            <a href="maito:hola@ceir.com" title="hola@ceir.com">hola@ceir.com</a>
+            <table width = "50px">
                 <th>
-                    <a href="index.html" </a>
-                     <img class="grow" ; src="imagenes/icono_españa.png" width="70px"
-                    height="70px">
+                        <a href="index.html" </a>
+                <img alt="Image of spanish flag" class= "grow";  src="imagenes/icono_españa.png" width = "70px" height = "70px">
                 </th>
                 <th>
-                   <img class="grow" ; src="imagenes/icono_reinoUnido.png"
-                        width="70px" height="70px">
+                <img alt="Image of english flag" class= "grow" ; src="imagenes/icono_reinoUnido.png" width = "70px" height = "70px">
                 </th>
-            </table>
+                </table>
         </div>
         <div class="col-md-3 col-sm-6">
-            <h3>Social Network</h3>
-            Twitter<br>
-            Facebook<br>
-            Intagram<br>
+            <h3>Redes sociales</h3>
+           <a href="http://twitter.com"> Twitter </a> <br>
+           <a href="http://facebook.com"> facebook </a> <br>
+           <a href="http://instagram.com"> instagram </a> <br>
         </div>
         <div class="col-md-3 col-sm-6">
-            <h3>ABOUT US</h3>
+            <h3>Sobre nosotros</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et
                 dolore magna aliqua.</p>
         </div>

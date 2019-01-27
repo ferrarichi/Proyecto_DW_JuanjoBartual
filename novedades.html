@@ -1,6 +1,101 @@
 <!DOCTYPE html>
 <html>
 
+    <style>
+
+
+        #info{
+            margin-top: 1em;
+        }
+    
+    .jumbotron{
+    
+        width: 100%;
+        margin: 0 auto;
+    
+    }
+    
+            .imagen_logo{
+    
+        width: 15em;
+        height: 15em;
+        }
+    
+        .Inicio{
+            width: 100%;
+        height: 100%;
+    
+        }
+    
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+          }
+          
+          /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+          .row.content {height: 450px}
+          
+          /* Set gray background color and 100% height */
+          .sidenav {
+            padding-top: 20px;
+            background-color: #f1f1f1;
+            height: auto;
+          }
+          
+          
+          /* On small screens, set height to 'auto' for sidenav and grid */
+          @media screen and (max-width: 767px) {
+            .sidenav {
+              height: auto;
+              padding: 15px;
+              width: auto;
+            }
+            .row.content {height:auto;} 
+          }
+      
+          .jumbotron{
+              margin: 0 auto; 
+              width: 700px;
+          }
+    
+          .grow:hover
+            {
+    
+            -webkit-transform: scale(1.3);
+            -ms-transform: scale(1.3);
+            transform: scale(1.3);
+    
+            }
+    
+            .well{
+    
+                background-color: white;
+            }
+    
+            #imagenes{
+                border-radius: 5em;
+            }
+    
+            #panel, #flip {
+                padding: 5px;
+                text-align: center;
+                background-color: #e5eecc;
+                border: solid 1px #c3c3c3;
+              }
+              
+              #panel {
+                padding: 50px;
+                display: none;
+              }
+    
+              .accesorios{
+    
+                height: 10em;
+                width: 10em;
+              }
+    
+    </style>
+    
 <head>
     <meta charset="ut-8">
     <title>CEIR</title>
@@ -11,116 +106,17 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            $(".info").click(function () {
-                $("#panel").slideDown("slow");
-            });
-        });
-    </script>
+
 
 </head>
 
-<style>
 
-
-    #info{
-        margin-top: 1em;
-    }
-
-.jumbotron{
-
-    width: 100%;
-    margin: 0 auto;
-
-}
-
-        .imagen_logo{
-
-    width: 15em;
-    height: 15em;
-    }
-
-    .Inicio{
-        width: 100%;
-    height: 100%;
-
-    }
-
-    .navbar {
-        margin-bottom: 0;
-        border-radius: 0;
-      }
-      
-      /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-      .row.content {height: 450px}
-      
-      /* Set gray background color and 100% height */
-      .sidenav {
-        padding-top: 20px;
-        background-color: #f1f1f1;
-        height: auto;
-      }
-      
-      
-      /* On small screens, set height to 'auto' for sidenav and grid */
-      @media screen and (max-width: 767px) {
-        .sidenav {
-          height: auto;
-          padding: 15px;
-          width: auto;
-        }
-        .row.content {height:auto;} 
-      }
-  
-      .jumbotron{
-          margin: 0 auto; 
-          width: 700px;
-      }
-
-      .grow:hover
-        {
-
-        -webkit-transform: scale(1.3);
-        -ms-transform: scale(1.3);
-        transform: scale(1.3);
-
-        }
-
-        .well{
-
-            background-color: white;
-        }
-
-        #imagenes{
-            border-radius: 5em;
-        }
-
-        #panel, #flip {
-            padding: 5px;
-            text-align: center;
-            background-color: #e5eecc;
-            border: solid 1px #c3c3c3;
-          }
-          
-          #panel {
-            padding: 50px;
-            display: none;
-          }
-
-          .accesorios{
-
-            height: 10em;
-            width: 10em;
-          }
-
-</style>
 
 <nav class="container-fluid">
     <div>
         <div class="col-md-4">
             <a href="index.html" title="CEIR">
-                <img class="imagen_logo" src="imagenes/logo_ceir.png" alt="logo CEIR">
+                <img alt="Imagen del logo de la pagina" class="imagen_logo" src="imagenes/logo_ceir.png" alt="logo CEIR">
             </a>
         </div>
         <div class="col-md-4 col-md-offset-4">
@@ -141,7 +137,7 @@
 
         <div>
             <button type="button" class="btn btn-info"> LLavero Bujia</button>
-            <img class="accesorios" src="imagenes/Llavero_bujia.jpg">
+            <img alt="Imagen de un llavero con forma de bujia" class="accesorios" src="imagenes/Llavero_bujia.jpg">
             <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mi ex, quis pretium orci
                 efficitur eleifend. Donec congue quis risus vel feugiat. </span>
             <br> <strong> 7€ </strong>
@@ -149,21 +145,21 @@
 
         <div>
                 <button type="button" class="btn btn-info"> LLavero Cambio de marchas</button>
-                <img class="accesorios" src="imagenes/llavero_cambiomarchas.jpeg">
+                <img alt="Imagen de un llavero con forma de cambio de marchas" class="accesorios" src="imagenes/llavero_cambiomarchas.jpeg">
                 <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mi ex, quis pretium orci
                 efficitur eleifend. Donec congue quis risus vel feugiat. </span>
                 <br> <strong> 4,60€ </strong>
             </div>
         <div>
                 <button type="button" class="btn btn-info"> LLavero Mazda</button>
-                <img class="accesorios" src="imagenes/Llavero_mazda.jpg">
+                <img alt="Imagen de un llavero con el logo de mazda" class="accesorios" src="imagenes/Llavero_mazda.jpg">
             <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mi ex, quis pretium orci
                 efficitur eleifend. Donec congue quis risus vel feugiat. </span>
                 <br> <strong> 4,60€ </strong>
         </div>
         <div>
                 <button type="button" class="btn btn-info"> LLavero Turbo</button>
-                <img class="accesorios" src="imagenes/llavero_turbo.jpg">
+                <img alt="Imagen de un llavero con forma de turbo" class="accesorios" src="imagenes/llavero_turbo.jpg">
             <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mi ex, quis pretium orci
                 efficitur eleifend. Donec congue quis risus vel feugiat. </span>
                 <br> <strong> 4,60€ </strong>
@@ -171,7 +167,7 @@
 
         <div>
                 <button type="button" class="btn btn-info"> LLavero Suspension</button>
-                <img class="accesorios" src="imagenes/llavero_suspension.jpeg">
+                <img alt="Imagen de un llavero con forma de brazo de suspensión" class="accesorios" src="imagenes/llavero_suspension.jpeg">
             <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mi ex, quis pretium orci
                 efficitur eleifend. Donec congue quis risus vel feugiat. </span>
                 <br> <strong> 4,60€ </strong>
@@ -179,28 +175,28 @@
 
         <div>
                 <button type="button" class="btn btn-info"> Vela Olor Carreras</button>
-                <img class="accesorios" src="imagenes/original-race-fuel-candle-1_x700.jpg">
+                <img alt="Imagen de una vela con olor a carreras"  class="accesorios" src="imagenes/original-race-fuel-candle-1_x700.jpg">
             <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mi ex, quis pretium orci
                 efficitur eleifend. Donec congue quis risus vel feugiat. </span>
                 <br> <strong> 7,60€ </strong>
         </div>
         <div>
                 <button type="button" class="btn btn-info"> Pegatina Retrovisor</button>
-                <img class="accesorios" src="imagenes/pegatina_retrovisor.png">
+                <img alt="Imagen de una pegatina para el retrovisor" class="accesorios" src="imagenes/pegatina_retrovisor.png">
             <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mi ex, quis pretium orci
                 efficitur eleifend. Donec congue quis risus vel feugiat. </span>
                 <br> <strong> 3,60€ </strong>
         </div>
         <div>
                 <button type="button" class="btn btn-info"> Sujeta Moviles</button>
-                <img class="accesorios" src="imagenes/sujeta_movil.jpg">
+                <img alt="Imagen de un aparato para sujetar el movil en el coche"  class="accesorios" src="imagenes/sujeta_movil.jpg">
                 <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mi ex, quis pretium orci
                     efficitur eleifend. Donec congue quis risus vel feugiat. </span>
                     <br> <strong> 6,60€ </strong>
                 </div>
             <div>
                     <button type="button" class="btn btn-info"> Visor Velocidad</button>
-                    <img class="accesorios" src="imagenes/visor_velocidad.jpg">
+                    <img alt="Imagen de un visor de velocidad para el coche" class="accesorios" src="imagenes/visor_velocidad.jpg">
                     <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mi ex, quis pretium orci
                         efficitur eleifend. Donec congue quis risus vel feugiat. </span>
                         <br> <strong> Proximamente </strong>
@@ -226,12 +222,21 @@
             <h3>Contacto</h3>
             Tel: (+34) 681355373<br>
             <a href="maito:hola@ceir.com" title="hola@ceir.com">hola@ceir.com</a>
+            <table width = "50px">
+                <th>
+                <img alt="Imagen de la bandera de España" class= "grow";  src="imagenes/icono_españa.png" width = "70px" height = "70px">
+                </th>
+                <th>
+                  <a href="index_ingles.html" </a>
+                <img alt="Imagen de la bandera de Reino Unido" class= "grow" ; src="imagenes/icono_reinoUnido.png" width = "70px" height = "70px">
+                </th>
+                </table>
         </div>
         <div class="col-md-3 col-sm-6">
             <h3>Redes sociales</h3>
-            Twitter<br>
-            Facebook<br>
-            Intagram<br>
+           <a href="http://twitter.com"> Twitter </a> <br>
+           <a href="http://facebook.com"> facebook </a> <br>
+           <a href="http://instagram.com"> instagram </a> <br>
         </div>
         <div class="col-md-3 col-sm-6">
             <h3>Sobre nosotros</h3>
